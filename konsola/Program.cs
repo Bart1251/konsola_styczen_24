@@ -29,8 +29,10 @@
         static void Main(string[] args)
         {
             string pesel = "55030101193";
-            Console.WriteLine(CheckSex(pesel));
-            Console.WriteLine(CheckChecksum(pesel));
+            Console.Write("Proszę wprowadzić numer pesel: ");
+            pesel = Console.ReadLine()!;
+            Console.WriteLine("Płeć: " + (CheckSex(pesel) == 'K' ? "Kobieta" : "Mężczyzna"));
+            Console.WriteLine("Suma kontrolna jest " + (CheckChecksum(pesel) ? "zgodna" : "niezgodna"));
         }
 
     }
