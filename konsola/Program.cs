@@ -2,6 +2,13 @@
 {
     internal class Program
     {
+        /**********************************************
+        nazwa funkcji: CheckSex
+        opis funkcji: Funkcja sprawdza płeć osoby na podstawie jej peselu
+        parametry: pesel - pesel osoby której płeć sprawdzamy
+        zwracany typ i opis: char - płeć osoby 'K'-kobieta lub 'M'-mężczyzna
+        autor: 12345678910
+        ***********************************************/
         static char CheckSex(string pesel)
         {
             if (int.Parse(pesel[9].ToString()) % 2 == 0)
